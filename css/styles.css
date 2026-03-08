@@ -17,6 +17,7 @@ html {
   font-family: var(--font-body);
   color: var(--dark);
   background-color: #fff;
+  font-size: 16px; /* base font size for consistent scaling */
 }
 body {
   line-height: 1.6;
@@ -383,6 +384,9 @@ img {
 
 /* Mobile & tablet responsiveness */
 @media (max-width: 768px) {
+  html {
+    font-size: 14px; /* reduce base font size for consistent scaling */
+  }
   .nav-toggle {
     display: block;
   }
@@ -446,6 +450,9 @@ img {
 }
 
 @media (max-width: 600px) {
+  html {
+    font-size: 13px; /* further reduction for very small screens */
+  }
   .navbar .logo img {
     height: 80px;
   }
@@ -455,6 +462,9 @@ img {
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 12px; /* smallest for phones */
+  }
   .hero h1 {
     font-size: 1.5rem !important;
   }
