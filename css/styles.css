@@ -146,7 +146,7 @@ img {
   background-color: #ff751f;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .nav-toggle {
     display: block;
   }
