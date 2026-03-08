@@ -43,6 +43,10 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Header / Navbar */
 .site-header {
@@ -162,17 +166,73 @@ a {
   .nav-links.open {
     transform: translateX(0);
   }
+  .hero {
+    padding: 4rem 1rem 6rem;
+  }
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
   .hero h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .section {
+    padding: 3rem 1rem;
+  }
+  .section h2 {
+    font-size: 2rem;
+  }
+  .section h3 {
+    font-size: 1.3rem;
   }
   .services-list {
     grid-template-columns: 1fr;
   }
   .contact-form {
     padding: 1rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+  .contact-form button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
+  .section h2 {
+    font-size: 1.8rem;
+  }
+  .section h3 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  .navbar .logo img {
+    height: 70px;
   }
 }
 
