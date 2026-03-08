@@ -432,6 +432,13 @@ img {
     transform: translateX(0);
     display: block;
   }
+  .nav-links a {
+    color: #222;
+  }
+  .nav-links a.active {
+    color: #ff751f;
+    text-decoration: underline;
+  }
   .hero {
     padding: 3rem 1rem 4rem;
   }
