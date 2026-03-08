@@ -409,7 +409,7 @@ img {
 /* Mobile & tablet responsiveness */
 @media (max-width: 768px) {
   html {
-    font-size: 14px; /* reduce base font size for consistent scaling */
+    font-size: 15px; /* reduce base font size for consistent scaling */
   }
   .nav-toggle {
     display: block;
@@ -456,15 +456,15 @@ img {
     padding: 3rem 1rem 4rem;
   }
   .hero h1 {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     margin-bottom: 0.5rem;
   }
   .hero h2 {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
     margin-bottom: 0.5rem;
   }
   .hero p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
   .btn {
@@ -497,7 +497,7 @@ img {
 
 @media (max-width: 600px) {
   html {
-    font-size: 13px; /* further reduction for very small screens */
+    font-size: 14px; /* further reduction for very small screens */
   }
   .navbar .logo img {
     height: 80px;
@@ -509,16 +509,16 @@ img {
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px; /* smallest for phones */
+    font-size: 13px; /* smallest for phones */
   }
   .hero h1 {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .hero h2 {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
   }
   .hero p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .section h2 {
     font-size: 1.8rem;
