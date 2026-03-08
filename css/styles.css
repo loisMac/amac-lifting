@@ -382,6 +382,30 @@ img {
 }
 }
 
+/* FAQ Section */
+.faq {
+  background-color: #f9f9f9;
+}
+.faq-list {
+  display: grid;
+  gap: 1.5rem;
+}
+.faq-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.faq-item h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.faq-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
 /* Mobile & tablet responsiveness */
 @media (max-width: 768px) {
   html {
