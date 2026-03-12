@@ -15,24 +15,26 @@ navLinks.addEventListener('click', (e) => {
   }
 });
 
-// highlight nav link for section in view
-const sections = document.querySelectorAll('section');
+// highlight nav link for section in view (main page only)
+const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a');
 
-const observerOptions = {
-  root: null,
-  threshold: 0.6
-};
+if (sections.length > 0) {
+  const observerOptions = {
+    root: null,
+    threshold: 0.6
+  };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navItems.forEach(item => item.classList.remove('active'));
-      const id = entry.target.id;
-      const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
-      if (activeLink) activeLink.classList.add('active');
-    }
-  });
-}, observerOptions);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navItems.forEach(item => item.classList.remove('active'));
+        const id = entry.target.id;
+        const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, observerOptions);
 
-sections.forEach(sec => observer.observe(sec));
+  sections.forEach(sec => observer.observe(sec));
+}
